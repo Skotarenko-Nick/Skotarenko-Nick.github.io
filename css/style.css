@@ -57,10 +57,12 @@ body {
 footer {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+/*
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
+*/
 }
 
 footer p {
