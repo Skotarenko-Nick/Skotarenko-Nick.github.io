@@ -1,15 +1,7 @@
     // Ported from original Metaball script by SATO Hiroyuki
     // http://park12.wakwak.com/~shp/lc/et/en_aics_script.html
 
-    $(document).ready(function () {
-    	$(".reverse-version").click(function () {
-    		project.currentStyle = {
-    			fillColor: 'wihte'
-    		};
-    		$("card-text").css("color", "black");
-    		$("body").css("background-color", "black");
-    	});
-    });
+
 
     project.currentStyle = {
     	fillColor: 'black'
