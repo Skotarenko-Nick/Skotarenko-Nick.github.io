@@ -1,5 +1,5 @@
 body {
-	min-height: 75rem;
+/*	min-height: 75rem;*/
 	/* Can be removed; just added for demo purposes */
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 .album {
-	min-height: 50rem;
+	min-height: 30rem;
 	/* Can be removed; just added for demo purposes */
 	padding-top: 3rem;
 	padding-bottom: 3rem;
@@ -57,6 +57,10 @@ body {
 footer {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 footer p {
