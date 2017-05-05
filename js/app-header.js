@@ -1,5 +1,16 @@
     // Ported from original Metaball script by SATO Hiroyuki
     // http://park12.wakwak.com/~shp/lc/et/en_aics_script.html
+
+    $(document).ready(function () {
+    	$(".reverse-version").click(function () {
+    		project.currentStyle = {
+    			fillColor: 'wihte'
+    		};
+    		$("card-text").css("color", "black");
+    		$("body").css("background-color", "black");
+    	});
+    });
+
     project.currentStyle = {
     	fillColor: 'black'
     };
@@ -8,17 +19,17 @@
             [1292, 428], [1117, 733], [1352, 86], [92, 798]];
     var handle_len_rate = 2.4;
     var circlePaths = [];
-    var radius = 50;
+    var radius = 30;
     for (var i = 0, l = ballPositions.length; i < l; i++) {
     	var circlePath = new Path.Circle({
     		center: ballPositions[i],
-    		radius: 50
+    		radius: 30
     	});
     	circlePaths.push(circlePath);
     }
     var largeCircle = new Path.Circle({
     	center: [676, 433],
-    	radius: 100
+    	radius: 70
     });
     circlePaths.push(largeCircle);
 
