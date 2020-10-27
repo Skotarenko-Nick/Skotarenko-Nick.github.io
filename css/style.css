@@ -119,3 +119,11 @@ footer p {
 .mailto-link:focus-within .mailto-message {
 	display: block;
 }
+
+.navbar-toggler-icon {
+	background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=fff') !important;
+}
+
+.navbar-toggler {
+	border: none;
+}
