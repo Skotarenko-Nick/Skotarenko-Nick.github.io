@@ -6,22 +6,27 @@
     project.currentStyle = {
     	fillColor: 'black'
     };
-    var ballPositions = [[255, 129], [610, 73], [486, 363],
-            [117, 459], [484, 726], [843, 306], [789, 615], [1049, 82],
-            [1292, 428], [1117, 733], [1352, 86], [92, 798]];
+    var ballPositions = [
+    	[255, 129], [610, 73], [486, 363],
+		[117, 459], [484, 726], [843, 306],
+		[789, 615], [1049, 82], [1292, 428],
+		[1117, 733], [1352, 86], [92, 798]
+	];
     var handle_len_rate = 2.4;
     var circlePaths = [];
-    var radius = 30;
+    var radius = 25;
     for (var i = 0, l = ballPositions.length; i < l; i++) {
     	var circlePath = new Path.Circle({
     		center: ballPositions[i],
-    		radius: 30
+    		radius: radius
     	});
     	circlePaths.push(circlePath);
     }
+	var x = $(window).width() / 2;
+	var y = $(window).height() / 2;
     var largeCircle = new Path.Circle({
-    	center: [676, 433],
-    	radius: 70
+    	center: [x, y],
+    	radius: 50
     });
     circlePaths.push(largeCircle);
 
@@ -54,7 +59,7 @@
     	var pi2 = Math.PI / 2;
     	var d = center1.getDistance(center2);
     	var u1, u2;
-    	if (radius1 == 0 || radius2 == 0)
+    	if (radius1 === 0 || radius2 === 0)
     		return;
     	if (d > maxDistance || d <= Math.abs(radius1 - radius2)) {
     		return;
