@@ -14,3 +14,7 @@ canvas[resize] {
 	height: 100%;
 	position: fixed;
 }
+
+.minh {
+	min-height: 80vh !important;
+}
